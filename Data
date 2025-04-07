@@ -1,2 +1,19 @@
 📂 Data Source:
 Due to size and licensing, the dataset is not included in this repo. You can download it from [Kaggle - Ames Housing Dataset](https://www.kaggle.com/datasets/shashanknecrothapa/ames-housing-dataset) and place it in the `data/` directory before running the code.
+
+
+├── notebooks/
+│   └── eda.ipynb               
+│
+├── scripts/
+│   ├── data_preprocessing.py     # handles all preprocessing
+│   ├── model_training.py         # model training (ridge, lasso, elastic net etc.)
+│   ├── model_evaluation.py       # coefficients, PDP, permutation importance, plots
+│   └── model_inference.py        # loads model and predicts on new data
+│
+├── outputs/
+│   ├── models/                   # saved models (e.g., .pkl)
+│   ├── plots/                    # saved plots (feature importance, PDP, etc.)
+│                       # training logs if any
+│
+├── requirements.txt 
